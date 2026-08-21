@@ -9,11 +9,11 @@ public class Swich2 {
 	
 	public static void main(String[] args) { 
 		
-		System.out.println("1. A");
-		System.out.println("2. B");
-		System.out.println("3. C");
-		System.out.println("4. D");
-		System.out.println("5. F");
+		System.out.println("A");
+		System.out.println("B");
+		System.out.println("C");
+		System.out.println("D");
+		System.out.println("F");
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("등급을 입력하세요:");
@@ -21,21 +21,22 @@ public class Swich2 {
 		
 		
 		switch(grade) {
-		case A:
+		case "A":
 			System.out.println("아주 열심히 하셨군요.");
 			break;
-		case B:
+		case "B":
 			System.out.println("아주 열심히 하셨군요.");
 			break;
-		case C:
+		case "C":
 			System.out.println("남들만큼 하셨네요.");
 			break;
-		case D:
+		case "D":
 			System.out.println("조금 더 노력이 필요합니다.");
 			break;
-		case F:
+		case "F":
 			System.out.println("교수실로 찾아오세요.");
 			break;
+			default:
 			
 		
 		}
