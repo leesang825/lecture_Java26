@@ -1,15 +1,27 @@
-package start;
+package Start;
+import java.util.Scanner;
 
 public class Swap {
 
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
-		int a = 10 , b = 25, swap = 15;
+		System.out.print("변수 a에 넣을 숫자 입력:");
+		int a = sc.nextInt();
+		
+		System.out.print("변수 b에 넣을 숫자 입력:");
+		int b = sc.nextInt();
+		
+		int change;
+		change = a;
+		a = b;
+		b = change;
+		System.out.println("Swapping 결과>\n변수 a의 값 = " + a + "\n" + "변수 b의 값 = " + b);
 		
 		
-		System.out.println("Swapping의 결과> 변수 a의 값 =" +(a+swap));
-		System.out.println("Swapping의 결과> 변수 b의 값 =" +(b-swap));
+		// ** github 참고함
 		
+
 	}
 
 }
